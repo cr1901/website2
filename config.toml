@@ -1,6 +1,8 @@
 # The URL the site will be built for
 base_url = "https://www.wdj-consulting.com"
 
+title = "WDJ"
+
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = true
 
@@ -14,4 +16,11 @@ build_search_index = false
 theme = "hyde"
 
 [extra]
+hyde_theme = "theme-base-0d"
+hyde_links = [
+    {url = "/", name = "Home"},
+    {url = "/consult.html", name = "Consulting"},
+    {url = "/about.html", name = "About"},
+    {url = "/blog.html", name = "Anachronism"},
+]
 # Put all your custom variables here
