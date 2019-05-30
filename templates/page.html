@@ -1,0 +1,6 @@
+{% extends "hyde/templates/index.html" %}
+
+<!-- A normal page on my website does not need a blog title or date. -->
+{% block content %}
+    {{ page.content | safe }}
+{% endblock content %}
