@@ -2,6 +2,7 @@
 base_url = "https://www.wdj-consulting.com"
 
 title = "WDJ"
+description = "cr1901's personal blog and consulting website."
 
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = true
@@ -21,6 +22,6 @@ hyde_links = [
     {url = "/", name = "Home"},
     {url = "/consult.html", name = "Consulting"},
     {url = "/about.html", name = "About"},
-    {url = "/blog.html", name = "Anachronism"},
+    {url = "/blog", name = "Anachronism"},
 ]
 # Put all your custom variables here
