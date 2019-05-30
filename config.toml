@@ -20,8 +20,8 @@ theme = "hyde"
 hyde_theme = "theme-base-0d"
 hyde_links = [
     {url = "/", name = "Home"},
-    {url = "/consult.html", name = "Consulting"},
-    {url = "/about.html", name = "About"},
+    {url = "/consult", name = "Consulting"},
+    {url = "/about", name = "About"},
     {url = "/blog", name = "Anachronism"},
 ]
 # Put all your custom variables here
