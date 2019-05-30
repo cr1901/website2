@@ -66,7 +66,7 @@ My contributions to Migen include:
 * Xilinx ISE support for Windows
 * Windows iverilog VPI support (pre 1.0 API)
 * Project IceStorm backend
-</ul>
+
 
 ### MiSoC
 [MiSoC](https://github.com/m-labs/misoc) is a system-on-a-chip (SoC) designer based on Migen.
@@ -74,7 +74,7 @@ MiSoC provides a build system, a set of C and Rust libraries, and a number of Wi
 to connect to an external Verilog or VHDL CPU core (with a Wishbone wrapper). Using MiSoC, it
 is easy to create a microcontroller or even an embedded Linux platform on a number
 of FPGA development boards. A simple generic SoC is provided as an example to port
-to custom hardware or unsupported development boards.</p>
+to custom hardware or unsupported development boards.
 
 Besides the SPI core refactor, my contributions to MiSoC specifically are mainly
 limited to Windows support. As of Decemeber 2016, I am currently using MiSoC's LatticeMico32 support to
