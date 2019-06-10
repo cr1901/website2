@@ -599,7 +599,7 @@ synthesize our design like so:
 if __name__ == "__main__":
     plat = icestick.Platform()
     m = Rot()
-    m.comb += [plat.request("user_led").eq(m.d1) for l in [m.d1, m.d2, m.d3, m.d4, m.d5]]
+    m.comb += [plat.request("user_led").eq(l) for l in [m.d1, m.d2, m.d3, m.d4, m.d5]]
     plat.build(m, run=True, build_dir="rot", build_name="rot_migen")
     plat.create_programmer().flash(0, "rot/rot_migen.bin")
 ```
@@ -617,7 +617,7 @@ top level and then run using your Python 3 interpreter:
   synthesis flow.
 
 * ```
-  m.comb += [plat.request("user_led").eq(m.d1) for l in [m.d1, m.d2, m.d3, m.d4, m.d5]]
+  m.comb += [plat.request("user_led").eq(l) for l in [m.d1, m.d2, m.d3, m.d4, m.d5]]
   ```
 
   This list comprehension is how we actually connect our I/O to the LED
@@ -663,7 +663,7 @@ If all goes well, and you were following along, you should now have a
 blinking LED example on your iCEStick! The final iCEStick platform board
 file is [here](https://github.com/m-labs/migen/blob/master/migen/build/platforms/icestick.py),
 which you can use as a reference, and I've made the `Rot` top level available
-as a [gist](https://gist.github.com/cr1901/afc0442405fa4727802182ff9eac0e84,).
+as a [gist](https://gist.github.com/cr1901/afc0442405fa4727802182ff9eac0e84).
 Take a look at the output files Migen generated, including the output
 Verilog and User Constraints File, to get a feel of how our "shiny new"
 board file was used!
