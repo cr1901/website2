@@ -3,16 +3,18 @@
 {% block content %}
     <div class="posts">
         {% for page in section.pages %}
-          <div class="post">
-            <h1 class="post-title">
-              <a href="{{ page.permalink }}">
-                {{ page.title }}
-              </a>
-            </h1>
+            {% if not page.draft %}
+                <div class="post">
+                    <h1 class="post-title">
+                    <a href="{{ page.permalink }}">
+                        {{ page.title }}
+                    </a>
+                    </h1>
 
-            <span class="post-date">{{ page.date | date(format="%Y-%m-%d") }}</span>
-            <p class="post-desc">{{ page.description }}</p>
-          </div>
+                    <span class="post-date">{{ page.date | date(format="%Y-%m-%d") }}</span>
+                    <p class="post-desc">{{ page.description }}</p>
+                </div>
+            {% endif %}
         {% endfor %}
     </div>
 {% endblock content %}
