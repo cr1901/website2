@@ -20,15 +20,23 @@ Twitter and Freenode IRC are the easiest ways to contact me as of this writing (
     <dd><a href="https://twitter.com/cr1901">@cr1901</a></dd>
 </dl>
 <dl>
-    <dt class="contact-key">Github</span></dt>
+    <dt class="contact-key">Github</dt>
     <dd><a href="https://github.com/cr1901">cr1901</a></dd>
 </dl>
 <dl>
     <dt class="contact-key">Freenode</dt>
     <dd>cr1901_modern (Main laptop)</dd>
     <dd>cr1901_286 (Yes, <a href="https://www.youtube.com/watch?v=rCEGX4hrvWg">it's a real 286</a>!)</dd>
-    <dd>Typically idling in <a href="http://webchat.freenode.net/?channels=higan">##higan</a> and
-    <a href="http://webchat.freenode.net/?channels=m-labs">#m-labs</a>, among others.</dd>
+    <dd>cr1901 (Netbook- yes it's confusing!)</dd>
+    <dd>Typically idling in: 
+        <a href="http://webchat.freenode.net/?channels=##higan">##higan</a>,
+        <a href="http://webchat.freenode.net/?channels=#m-labs">#m-labs</a>,
+        <a href="http://webchat.freenode.net/?channels=##openfpga">##openfpga</a>,
+        <a href="http://webchat.freenode.net/?channels=#proghq">#proghq</a>,
+        <a href="http://webchat.freenode.net/?channels=#snes">#snes</a>,
+        <a href="http://webchat.freenode.net/?channels=#timvideos">#timvideos</a>, and
+        <a href="http://webchat.freenode.net/?channels=##yamahasynths">##yamahasynths</a>,
+        among others.</dd>
 </dl>
 <dl>
     <dt class="contact-key">Email</dt>
