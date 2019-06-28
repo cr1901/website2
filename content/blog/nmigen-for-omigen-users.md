@@ -47,7 +47,7 @@ I personally noted when writing nMigen code and synthesizing code to FPGAs:
   constructs.
   
   `Fragment`s are also still present in nMigen, but have semantically different
-  properties that are beyond the scope of this post.{{fn(id=3}}
+  properties that are beyond the scope of this post.{{fn(id=3)}}
 
 * nMigen breaks the cycle of FPGA tools targeting Verilog/VHDL only.
   
@@ -64,22 +64,26 @@ I personally noted when writing nMigen code and synthesizing code to FPGAs:
   foreseeable future, will) require yosys before the Place-And-Route (PNR) and
   bitstream generation. Since yosys will happily generate input files
   compatible with FOSS PNR tools{{fn(id=4)}} from RTLIL by design, this means
-  that one can generate an FPGA bitstream using nMigen without any phase ever
-  seeing a line of Verilog!
+  that one can generate an FPGA bitstream using nMigen without needing to
+  target Verilog first (beyond the Verilog libraries yosys uses internally)!
 
 * nMigen uses Python context managers to implement flow control.
   
   Context managers mean it is now possible to pair `comb` and `sync` statements
-  under the same `If/Else/Elif` and `Switch/Case` blocks. The context managers
-  have access to enough information to correctly handle statements with the same
-  trigger condition but different clock domains (including combinational code).
+  under the same `If/Else/Elif` and `Switch/Case` and `FSM` blocks. The context 
+  managers have access to enough information to correctly handle statements 
+  with the same trigger condition but different clock domains (including 
+  combinational code). 
   
   This feature has no equivalent in oMigen, where flow control constructs were
   tied to a specific clock domain via `self.sync += [If(..., ...).Else(...)]`. 
   
   `FSM`s are also implemented as a context manager in nMigen, whereas in oMigen
   they are implemented as plan Modules with a `do_finalize` method that hooks
-  into oMigen internals to generate the required code correctly.
+  into oMigen internals to generate the required code correctly. Because one
+  can associate multiple domains to the same trigger condition using context
+  managers, the `NextValue` node, commonly used to build FSMs in oMigen, is no
+  longer needed and thus has been removed.
 
 * There are no more `Specials` and `do_finalize`.
   
@@ -97,8 +101,8 @@ I personally noted when writing nMigen code and synthesizing code to FPGAs:
   
   For most cases, the required changes are minimal burden (although I will
   briefly discuss internals later). As of this writing (6-27-2019), only
-  targeting Xilinx Spartan 6, Xilinx Series 7, and Lattice iCE40 is supported,
-  a subset of `migen.build`.
+  targeting Xilinx Spartan 6, Xilinx Series 7, Lattice iCE40, and Lattice ECP5
+  is supported, a subset of `migen.build`.
 
 * Board files still exist, but now live in their own repository called
   [nmigen-boards](https://github.com/m-labs/nmigen-boards/).
@@ -124,7 +128,7 @@ will serve as a guide.
 
 ### Tristates
 
-#### Inferred Primitives
+#### Other (I/O) Primitives
 DDR I/O, etc. Good lead-in from Tristates
 
 ### Building A Design
@@ -156,12 +160,15 @@ satisfied{{fn(id=5)}} with nMigen's design decisions, I look forward to what new
 designs people have to offer in nMigen.
 
 ## Acknowledgements
+I would like to thank [whitequark](https://twitter.com/whitequark) for looking
+over drafts of this post and offerring valuable overall feedback and catching
+typos.
 
 ## Footnotes
 {% fntrg(id=1) %}
 While I am involved with submitting new features to nMigen not in (o)Migen,
 I was/am not personally involved design decisions of nMigen core. I defer a
-blog post or discussion of nMigen design decisions to someone at m-labs.
+blog post or discussion of nMigen design decisions to someone at M-labs.
 {% end %}
 
 {% fntrg(id=2) %}
