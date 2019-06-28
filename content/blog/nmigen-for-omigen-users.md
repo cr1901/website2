@@ -67,7 +67,8 @@ I personally noted when writing nMigen code and synthesizing code to FPGAs:
   that one can generate an FPGA bitstream using nMigen without needing to
   target Verilog first (beyond the Verilog libraries yosys uses internally)!
 
-* nMigen uses Python context managers to implement flow control.
+* nMigen uses Python [context managers](https://docs.python.org/3/reference/datamodel.html#context-managers)
+  to implement flow control.
   
   Context managers mean it is now possible to pair `comb` and `sync` statements
   under the same `If/Else/Elif` and `Switch/Case` and `FSM` blocks. The context 
@@ -76,20 +77,23 @@ I personally noted when writing nMigen code and synthesizing code to FPGAs:
   combinational code). 
   
   This feature has no equivalent in oMigen, where flow control constructs were
-  tied to a specific clock domain via `self.sync += [If(..., ...).Else(...)]`. 
+  tied to a specific clock domain (or the comb "domain") via
+  `self.sync += [If(..., ...).Else(...)]`. 
   
   `FSM`s are also implemented as a context manager in nMigen, whereas in oMigen
-  they are implemented as plan Modules with a `do_finalize` method that hooks
+  they are implemented as plain Modules with a `do_finalize` method that hooks
   into oMigen internals to generate the required code correctly. Because one
   can associate multiple domains to the same trigger condition using context
   managers, the `NextValue` node, commonly used to build FSMs in oMigen, is no
-  longer needed and thus has been removed.
+  longer needed and thus has been removed. FSM ergonomics was one of the
+  primary reasons for switching to context managers in nMigen, and will be
+  demonstrated with sample code later.
 
 * There are no more `Specials` and `do_finalize`.
   
   The lack of `Specials` affects how `Memories` and `Tristates` in particular
   are implemented, which I'll discuss later. Discussing the lack of 
-  `do_finalize` is beyond the scope of this post.{{fn(id=3}})
+  `do_finalize` is beyond the scope of this post.{{fn(id=3)}}
   
 * nMigen supports yosys's formal verification facilities.
   
@@ -160,9 +164,10 @@ satisfied{{fn(id=5)}} with nMigen's design decisions, I look forward to what new
 designs people have to offer in nMigen.
 
 ## Acknowledgements
-I would like to thank [whitequark](https://twitter.com/whitequark) for looking
-over drafts of this post and offerring valuable overall feedback and catching
-typos.
+I would like to thank [whitequark](https://twitter.com/whitequark) and
+[Sébastien Bourdeauducq](https://twitter.com/m_labs_ltd), both of M-labs, for
+looking over drafts of this post and offerring valuable overall feedback and
+catching typos.
 
 ## Footnotes
 {% fntrg(id=1) %}
@@ -179,7 +184,7 @@ worked in oMigen is considered a good bug report :).
 {% fntrg(id=3) %}
 This should be read as "I am not currently qualified to discuss the differences,
 and while I think they're important, I am deferring discussion to an update
-to this post". :)
+to this post" :).
 {% end %}
 
 {% fntrg(id=4) %}
