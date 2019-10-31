@@ -23,5 +23,6 @@ hyde_links = [
     {url = "/consult", name = "Consulting"},
     {url = "/about", name = "About"},
     {url = "/blog", name = "Anachronism"},
+    {url = "/notes", name = "Notes"},
 ]
 # Put all your custom variables here

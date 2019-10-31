@@ -1,0 +1,45 @@
+{% extends "hyde/templates/index.html" %}
+
+{% block content %}
+    <p>I keep a personal <a href="https://tiddlywiki.com">wiki</a> for a number
+    of articles, TODOs, and questions I have over technical topics I read
+    online. I normally add to my wiki when it's <em>clear</em> I'll need to
+    reference something later, or I just don't have the time or mental
+    bandwidth to dig further. I've decided recently (10-30-2019) to share
+    some of these pages as <em>notes</em>.</p>
+
+    <p>Think of these notes pages as the digital equivalent of quickly jotting
+    down thoughts and things I've learned on sticky notes. In these notes,
+    it's more important that I have a written record of the things I've learned
+    than their presentation. The quicker I write down my thoughts, the faster
+    I can focus my short-term memory bandwidth on more important matters :).
+    When I've either forgotten (likely) or stored what I've learned in
+    long-term memory later, I can come back to my notes to refresh!</p>
+
+    <p>I hope the notes I publish are useful to others, and I believe them to be
+    as accurate as possible. However, it is possible the information contained
+    within is wrong and needs correcting, so read at your own risk!</p>
+
+    <p>These notes were created by using Tiddlywiki's
+    <a href="https://tiddlywiki.com/static/How%2520to%2520export%2520tiddlers.html">HTML export</a>
+    and directly extracting the output <code>div</code> with class
+    <code>tc-tiddler-body</code>.
+
+
+    <div class="notes">
+        {% for page in section.pages %}
+            {% if not page.draft %}
+                <div class="note">
+                    <h1 class="note-title">
+                    <a href="{{ page.permalink }}">
+                        {{ page.title }}
+                    </a>
+                    </h1>
+
+                    <span class="note-date">{{ page.date | date(format="%Y-%m-%d") }}</span>
+                    <p class="note-desc">{{ page.description }}</p>
+                </div>
+            {% endif %}
+        {% endfor %}
+    </div>
+{% endblock content %}
