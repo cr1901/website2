@@ -1188,7 +1188,7 @@ drivers.
 Interfacing DOS with the serial port could be a blog post in and of itself,
 I'm afraid. It's very easy to get a very helpful <code>Write failure</code> or
 <code>General failure</code> when accessing the serial port (e.g.
-code>COPY COM2 FOO.TXT</code> or <code>CTTY COM2</code>) just by breathing
+<code>COPY COM2 FOO.TXT</code> or <code>CTTY COM2</code>) just by breathing
 wrong. What <em>best</em> matches my experience is that DOS uses <a href="https://en.wikipedia.org/wiki/RS-232#RTS,_CTS,_and_RTR">flow control</a>
 for sending but not receiving (<a href="http://web.archive.org/web/20010817014431/http://www.algonet.se/~dennisgr/z88-dark.htm">Source</a>).
 Disabling flow control in your serial terminal or transfer program is a safe
@@ -1197,10 +1197,10 @@ option.
 
 {% fntrg(id=4) %}
 I don't remember the exact details right now (and will check later), but I had
-an old 8-bit ISA CNet NIC that required a few kB of [Upper Memory](https://en.wikipedia.org/wiki/Upper_memory_area).
+an old 8-bit ISA CNet NIC that required a few kB of <a href="https://en.wikipedia.org/wiki/Upper_memory_area">Upper Memory</a>.
 The manufacturer-set default switches for the memory area- yes, this had to be
 set manually!- conflicted with the memory area commonly used for hard drive
-controller (segment `0xc800`). This was even mentioned in the manual I got with
+controller (segment <code>0xc800</code>). This was even mentioned in the manual I got with
 the card, but of course I didn't read it first :).
 {% end %}
 
