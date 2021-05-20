@@ -9,41 +9,65 @@ aliases = ["about.html"]
 
 I've been told to "Do Good Things." Occasionally I've even been told that I
 succeed in this endeavor. Electronics Hobbyist. Programmer. Freelancer.
-Interested in the days past where DIP chips reigned supreme.
+Interested in the days past where [DIP chips](https://en.wikipedia.org/wiki/Dual_in-line_package)
+reigned supreme.
 
-The meaning of my handle (cr1901) is lost to time. On Unix machines, I try to use the name _wjones_.
-Twitter and Freenode IRC are the easiest ways to contact me as of this writing (2019-05-30).
+The meaning of my handle (cr1901) is lost to time. On Unix machines, I try to
+use the name _wjones_. Twitter and [Libera Chat](https://libera.chat) (IRC) are
+the easiest ways to contact me as of this writing (2021-05-20).
 
 ## Contact Info
-<dl>
-    <dt class="contact-key">Twitter</dt>
-    <dd><a href="https://twitter.com/cr1901">@cr1901</a></dd>
-</dl>
-<dl>
-    <dt class="contact-key">Github</dt>
-    <dd><a href="https://github.com/cr1901">cr1901</a></dd>
-</dl>
-<dl>
-    <dt class="contact-key">Freenode</dt>
-    <dd>cr1901_modern (Main laptop)</dd>
-    <dd>cr1901_286 (Yes, <a href="https://www.youtube.com/watch?v=rCEGX4hrvWg">it's a real 286</a>!)</dd>
-    <dd>cr1901 (Netbook- yes it's confusing!)</dd>
-    <dd>Typically idling in: 
-        <a href="http://webchat.freenode.net/?channels=##higan">##higan</a>,
-        <a href="http://webchat.freenode.net/?channels=#m-labs">#m-labs</a>,
-        <a href="http://webchat.freenode.net/?channels=##openfpga">##openfpga</a>,
-        <a href="http://webchat.freenode.net/?channels=#proghq">#proghq</a>,
-        <a href="http://webchat.freenode.net/?channels=#snes">#snes</a>,
-        <a href="http://webchat.freenode.net/?channels=#timvideos">#timvideos</a>, and
-        <a href="http://webchat.freenode.net/?channels=##yamahasynths">##yamahasynths</a>,
-        among others.</dd>
-</dl>
-<dl>
-    <dt class="contact-key">Email</dt>
-    <dd><a href="mailto:thor0505@comcast.net">Personal</a></dd>
-    <dd><a href="mailto:wjones@wdj-consulting.com">Business</a></dd>
-</dl>
-<dl>
-    <dt class="contact-key">Keybase</dt>
-    <dd><a href="https://keybase.io/cr1901">cr1901</a></dd>
-</dl>
+### Twitter
+* [@cr1901](https://twitter.com/cr1901)
+
+### Github
+* [cr1901](https://github.com/cr1901)
+
+### Libera Chat
+As more channels migrate to Libera Chat or [OFTC](https://www.oftc.net), I'll
+update the "idling in" list.  When Libera Chat has a web client, I'll fill in
+hyperlinks to the listed channels.
+
+* `cr1901` (Main laptop)
+* `cr1901_286` (Yes, [it's a real 286](https://www.youtube.com/watch?v=rCEGX4hrvWg)!)
+* `cr1901_netbook` (Netbook or other)
+
+Typically idling in:
+* `##homebrewcpu`
+* `##openfpga`
+* `##yamahasynths`
+* `#discferret`
+* `#neogeodev`
+* `#nmigen`
+* `#snes`
+* `#tendra`
+* `#yosys`
+* `#zig`
+
+### Freenode
+[Freenode](https://freenode.net) is [considered](https://gist.github.com/joepie91/df80d8d36cd9d1bde46ba018af497409)
+compromised as of this writing (2021-05-20). I will need to remain on Freenode
+for the time being, but I will primarily be checking only Libera Chat.
+
+* `cr1901_modern` (Main laptop)
+* `cr1901_286` (286 machine)
+* `cr1901` (Netbook or other)
+
+Typically idling in:
+* [`##sillycon`](http://webchat.freenode.net/?channels=##sillycon)
+* [`#j-core`](http://webchat.freenode.net/?channels=#j-core)
+* [`#litex`](http://webchat.freenode.net/?channels=#litex)
+* [`#netbsd-code`](http://webchat.freenode.net/?channels=#netbsd-code)
+* [`#proghq`](http://webchat.freenode.net/?channels=#proghq)
+* [`#rust-embedded`](http://webchat.freenode.net/?channels=#rust-embedded)
+* [`#rust-retro`](http://webchat.freenode.net/?channels=#rust-retro)
+* [`#timvideos`](http://webchat.freenode.net/?channels=#timvideos)
+* [`#usbrply`](http://webchat.freenode.net/?channels=#usbrply)
+* [`#winswitch`](http://webchat.freenode.net/?channels=#winswitch)
+
+### Email
+* [Personal](mailto:thor0505@comcast.net)
+* [Business](mailto:wjones@wdj-consulting.com)
+
+### Keybase
+* [cr1901](https://keybase.io/cr1901)
