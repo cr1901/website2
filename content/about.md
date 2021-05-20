@@ -61,6 +61,7 @@ Typically idling in:
 * [`#proghq`](http://webchat.freenode.net/?channels=#proghq)
 * [`#rust-embedded`](http://webchat.freenode.net/?channels=#rust-embedded)
 * [`#rust-retro`](http://webchat.freenode.net/?channels=#rust-retro)
+* [`#symbiflow`](http://webchat.freenode.net/?channels=#symbiflow)
 * [`#timvideos`](http://webchat.freenode.net/?channels=#timvideos)
 * [`#usbrply`](http://webchat.freenode.net/?channels=#usbrply)
 * [`#winswitch`](http://webchat.freenode.net/?channels=#winswitch)
