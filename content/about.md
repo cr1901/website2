@@ -20,6 +20,9 @@ the easiest ways to contact me as of this writing (2021-05-20).
 ### Twitter
 * [@cr1901](https://twitter.com/cr1901)
 
+### Fediverse
+* [Mastodon](https://mastodon.social/@cr1901)
+
 ### Github
 * [cr1901](https://github.com/cr1901)
 
