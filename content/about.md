@@ -24,47 +24,42 @@ the easiest ways to contact me as of this writing (2021-05-20).
 * [cr1901](https://github.com/cr1901)
 
 ### Libera Chat
-As more channels migrate to Libera Chat or [OFTC](https://www.oftc.net), I'll
-update the "idling in" list.  When Libera Chat has a web client, I'll fill in
-hyperlinks to the listed channels.
-
+I have a few nicks I use on Libera Chat:
 * `cr1901` (Main laptop)
 * `cr1901_286` (Yes, [it's a real 286](https://www.youtube.com/watch?v=rCEGX4hrvWg)!)
 * `cr1901_netbook` (Netbook or other)
 
 Typically idling in:
-* `##homebrewcpu`
-* `##openfpga`
-* `##yamahasynths`
-* `#discferret`
-* `#neogeodev`
-* `#nmigen`
-* `#snes`
-* `#tendra`
-* `#yosys`
-* `#zig`
+* [`##homebrewcpu`](https://web.libera.chat/?nick=Guest?##homebrewcpu)
+* [`##openfpga`](https://web.libera.chat/?nick=Guest?##openfpga)
+* [`##rust-retro`](https://web.libera.chat/?nick=Guest?##rust-retro)
+* [`##sillycon`](https://web.libera.chat/?nick=Guest?##sillycon)
+* [`##yamahasynths`](https://web.libera.chat/?nick=Guest?##yamahasynths)
+* [`#discferret`](https://web.libera.chat/?nick=Guest?#discferret)
+* [`#j-core`](https://web.libera.chat/?nick=Guest?#j-core)
+* [`#litex`](https://web.libera.chat/?nick=Guest?#litex)
+* [`#neogeodev`](https://web.libera.chat/?nick=Guest?#neogeodev)
+* [`#netbsd-code`](https://web.libera.chat/?nick=Guest?#netbsd-code)
+* [`#nmigen`](https://web.libera.chat/?nick=Guest?#nmigen)
+* [`#proghq`](https://web.libera.chat/?nick=Guest?#proghq)
+* [`#rust-embedded`](https://web.libera.chat/?nick=Guest?#rust-embedded)
+* [`#snes`](https://web.libera.chat/?nick=Guest?#snes)
+* [`#symbiflow`](https://web.libera.chat/?nick=Guest?#symbiflow)
+* [`#tendra`](https://web.libera.chat/?nick=Guest?#tendra)
+* [`#timvideos`](https://web.libera.chat/?nick=Guest?#timvideos)
+* [`#xeserv`](https://web.libera.chat/?nick=Guest?#xeserv)
+* [`#xpra`](https://web.libera.chat/?nick=Guest?#xpra)
+* [`#yosys`](https://web.libera.chat/?nick=Guest?#yosys)
+* [`#zig`](https://web.libera.chat/?nick=Guest?#zig)
+
+### OFTC
+I can also be found on OFTC using the nick `cr1901`, but at present (2021-10-2)
+am not idling in any particular rooms.
 
 ### Freenode
 [Freenode](https://freenode.net) is [considered](https://gist.github.com/joepie91/df80d8d36cd9d1bde46ba018af497409)
-compromised as of this writing (2021-05-20). I will need to remain on Freenode
-for the time being, but I will primarily be checking only Libera Chat.
-
-* `cr1901_modern` (Main laptop)
-* `cr1901_286` (286 machine)
-* `cr1901` (Netbook or other)
-
-Typically idling in:
-* [`##sillycon`](http://webchat.freenode.net/?channels=##sillycon)
-* [`#j-core`](http://webchat.freenode.net/?channels=#j-core)
-* [`#litex`](http://webchat.freenode.net/?channels=#litex)
-* [`#netbsd-code`](http://webchat.freenode.net/?channels=#netbsd-code)
-* [`#proghq`](http://webchat.freenode.net/?channels=#proghq)
-* [`#rust-embedded`](http://webchat.freenode.net/?channels=#rust-embedded)
-* [`#rust-retro`](http://webchat.freenode.net/?channels=#rust-retro)
-* [`#symbiflow`](http://webchat.freenode.net/?channels=#symbiflow)
-* [`#timvideos`](http://webchat.freenode.net/?channels=#timvideos)
-* [`#usbrply`](http://webchat.freenode.net/?channels=#usbrply)
-* [`#winswitch`](http://webchat.freenode.net/?channels=#winswitch)
+compromised as of this writing (2021-05-20). In mid-June 2021, all accounts on
+Freenode were purged. I no longer have any presence on the network.
 
 ### Email
 * [Personal](mailto:thor0505@comcast.net)
