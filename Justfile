@@ -8,4 +8,4 @@ serve:
 
 # Build and deploy website.
 deploy: build
-  rsync -zlHxihrptuv public/ freebsd@wdj-consulting.com:/usr/local/www/site
+  rsync -zlHxihrptuv --rsh=/usr/bin/ssh public/ freebsd@wdj-consulting.com:/usr/local/www/site
