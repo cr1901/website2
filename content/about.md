@@ -66,7 +66,7 @@ overview of the type of projects I'm interested in:
 * [`#zig`](https://web.libera.chat/?nick=Guest?#zig)
 
 #### OFTC
-* [`#mesonbuild`](https://webchat.oftc.net/?channels=##mesonbuild)
+* [`#mesonbuild`](https://webchat.oftc.net/?channels=#mesonbuild)
 
 #### EsperNet
 * [`#uxn`](https://webchat.esper.net/?channels=uxn)
