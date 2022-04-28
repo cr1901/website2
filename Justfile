@@ -8,6 +8,7 @@ build:
 serve:
   zola serve --drafts
 
+# Quickly save changes.
 auto-commit AMEND="0" REASON="":
   -GIT_FLAGS="-am"; \
   AUTO_STR="Auto commit on `date \"+%Y-%m-%d at %H:%M:%S\"`."; \
