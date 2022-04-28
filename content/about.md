@@ -21,7 +21,7 @@ the easiest ways to contact me as of this writing (2021-05-20).
 * [@cr1901](https://twitter.com/cr1901)
 
 ### Fediverse
-* [Mastodon](https://mastodon.social/@cr1901)
+* <a rel="me" href="https://mastodon.social/@cr1901">Mastodon</a>
 
 ### Github
 * [cr1901](https://github.com/cr1901)
