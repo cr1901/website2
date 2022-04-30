@@ -1225,7 +1225,7 @@ pinout matches the more traditional 34-pin edge connector, so an adapter
 isn't difficult.
 {% end %}
 
-{% fntrg(id=8) %}
+<!-- {% fntrg(id=8) %}
 This is in contrast to x86 Linux, BSD, Windows, or any hobbyist OS using
 <a href="https://en.wikipedia.org/wiki/Protected_mode">protected mode</a>.
 While I imagine DOS started out using the BIOS services as a space saving
@@ -1233,7 +1233,7 @@ measure, I imagine there was also a backwards compatibility element later on
 that made a more efficient reimplementation of BIOS services impossible.
 {% end %}
 
-<!-- {% fntrg(id=5) %}
+{% fntrg(id=5) %}
 In my opinion, info is _still_ hard to find though the situation has gotten
 better. Back when I was actively learning about DOS, [DEVDRIV.DOC](https://github.com/microsoft/MS-DOS/blob/master/v2.0/bin/DEVDRIV.DOC)
 didn't exist yet. I'll seek out my old [VCF](http://www.vcfed.org/forum/forum.php)
