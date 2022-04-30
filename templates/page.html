@@ -2,5 +2,12 @@
 
 <!-- A normal page on my website does not need a blog title or date. -->
 {% block content %}
+    <!-- <div class="post"> -->
     {{ page.content | safe }}
+    {% if page.updated %}
+    <p style="text-align: center;"><em>Last Updated: {{ page.updated | safe }}</em></p>
+    {% else %}
+    <p style="text-align: center;"><em>Last Updated: {{ page.date | safe }}</em></p>
+    {% endif %}
+    <!-- </div> -->
 {% endblock content %}

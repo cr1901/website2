@@ -1,6 +1,7 @@
 +++
 title = "About Me"
 date = 2019-05-30
+updated = 2022-04-28
 aliases = ["about.html"]
 +++
 

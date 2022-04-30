@@ -2,6 +2,7 @@
 title = "Porting a New Board To Migen"
 description = "A tutorial on creating a placement-constraints file (PCF) usable from the Migen Hardware Description Language (HDL)."
 date = 2017-09-25
+updated = 2019-06-09
 aliases = ["blog/migen-port.html"]
 +++
 

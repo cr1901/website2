@@ -2,6 +2,7 @@
 title = "A Tour Of ethflop"
 description = "My experiences with using the new ethflop TSR for DOS- floppies over the network!"
 date = 2019-12-11
+updated = 2022-04-29
 aliases = ["blog/ethflop.html"]
 +++
 
