@@ -2,6 +2,7 @@
 title = "Floppy Disk Notes"
 description = "A compilation on literature discussing the theory of operation of floppy disk drives."
 date = 2016-02-10
+updated = 2022-04-30
 aliases = ["blog/floppy-lit.html"]
 +++
 
@@ -50,7 +51,7 @@ Shugart did in the late 70's.
 A monograph on analog PLLs. Does not discuss All-Digital PLLs (ADPLLs).
 {% end %}
 
-{% linkcont(name="NXP Phase Locked Loops Design Fundamentals Application Note", url="http://www.nxp.com/files/rf_if/doc/app_note/AN535.pdf") %}
+{% linkcont(name="NXP Phase Locked Loops Design Fundamentals Application Note", url="https://www.nxp.com/files-static/rf_if/doc/app_note/AN535.pdf") %}
 A quick reference for analog PLL design.
 {% end %}
 </dl>
@@ -58,15 +59,15 @@ A quick reference for analog PLL design.
 ## Encodings
 <h3><abbr title="Modified Frequency Modulation">MFM</abbr></h3>
 <dl>
-{% linkcont(name="Floppy Disk Data Separator Design Guide for the DP8473", url="http://bitsavers.trailing-edge.com/pdf/national/_dataSheets/DP8473/AN-505_Floppy_Disk_Data_Separator_Design_Guide_for_the_DP8473_Feb89.pdf") %}
+{% linkcont(name="Floppy Disk Data Separator Design Guide for the DP8473", url="http://www.bitsavers.org/components/national/_dataSheets/DP8473/AN-505_Floppy_Disk_Data_Separator_Design_Guide_for_the_DP8473_Feb89.pdf") %}
 To be written.
 {% end %}
 
-{% linkcont(name="Encoding/Decoding Techniques Double Floppy Disc Capacity", url="ftp://ftp.eskimo.com/home/mzenier/cd-8002-1.pdf") %}
+{% linkcont(name="Encoding/Decoding Techniques Double Floppy Disc Capacity", url="http://bitsavers.informatik.uni-stuttgart.de/magazines/Computer_Design/198002_Encoding-Decoding_Techniques_Double_Floppy_Disc_Capacity.pdf") %}
 Gives background on more complicated physical phenomenon associated with floppy drive recording, such as magnetic domain shifting.
 {% end %}
 
-{% linkcont(name="Floppy Data Extractor", url="http://www.analog-innovations.com/SED/FloppyDataExtractor.pdf") %}
+{% linkcont(name="Floppy Data Extractor", url="http://web.archive.org/web/20150212042616/http://www.analog-innovations.com/SED/FloppyDataExtractor.pdf") %}
 A schematic for a minimum component data separator that does not require a
 PLL, but uses a digital equivalent. Perhaps a simple <abbr title="All Digital
 Phase-Locked Loop">ADPLL</abbr>?
@@ -113,19 +114,19 @@ NEC created an application note to discuss how to integrate the 765 into a
 
 ### TI TMS279X</h3>
 <dl>
-{% linkcont(name="TMS279X Datasheet", url="http://www.swtpc.com/mholley/DC_5/TMS279X_DataSheet.pdf") %}
+{% linkcont(name="TMS279X Datasheet", url="http://info-coach.fr/atari/documents/general/fd/TMS279X_DataSheet.pdf") %}
 Includes a diagram of the IBM System 34 track format.
 {% end %}
 </dl>
 
 <h3>NI DP8473</h3>
 <dl>
-{% linkcont(name="DP8473 Datasheet", url="https://www.engineering.uiowa.edu/sites/default/files/ees/files/NI/pdfs/00/93/DS009384.pdf") %}
+{% linkcont(name="DP8473 Datasheet", url="DS009384.PDF") %}
 A successor to the 765 that is capable of handing formats such as 1.2MB High
 Density (HD) disks
 {% end %}
 
-{% linkcont(name="Design Guide for DP8473 in a PC-AT", url="http://www.textfiles.com/bitsavers/pdf/national/_dataSheets/DP8473/AN-631_Design_Guide_for_DP8473_in_a_PC-AT_Dec89.pdf") %}
+{% linkcont(name="Design Guide for DP8473 in a PC-AT", url="http://www.bitsavers.org/components/national/_dataSheets/DP8473/AN-631_Design_Guide_for_DP8473_in_a_PC-AT_Dec89.pdf") %}
 TODO. It appears I lost my original commentary on this document.
 {% end %}
 </dl>
