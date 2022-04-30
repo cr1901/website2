@@ -16,13 +16,15 @@ build_search_index = false
 
 theme = "hyde"
 
+feed_filename = "atom.xml"
+
 [extra]
 hyde_theme = "theme-base-0d"
 hyde_links = [
     {url = "/", name = "Home"},
     {url = "/consult/", name = "Consulting"},
     {url = "/about/", name = "About"},
-    {url = "/blog/", name = "Anachronism"},
+    {url = "/blog/", name = "Anachronism", rss="/blog/atom.xml"},
     {url = "/notes/", name = "Notes"},
 ]
 # Put all your custom variables here

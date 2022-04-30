@@ -22,7 +22,11 @@ auto-commit AMEND="0" REASON="":
   fi; \
   git commit $GIT_FLAGS "$AUTO_STR"
 
+# Build and deploy website (no commit).
+deploy: build
+  rsync -zlHxihrptuv --rsh=/usr/bin/ssh public/ freebsd@wdj-consulting.com:/usr/local/www/site
+
 # Build and deploy website.
-deploy: build (auto-commit "0" "Deploying")
+deploy-commit: build (auto-commit "0" "Deploying")
   rsync -zlHxihrptuv --rsh=/usr/bin/ssh public/ freebsd@wdj-consulting.com:/usr/local/www/site
   git push origin master

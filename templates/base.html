@@ -1,0 +1,21 @@
+{% extends "hyde/templates/index.html" %}
+
+{% block sidebar_nav %}
+{% for link in config.extra.hyde_links %}
+  {% if link.rss %}
+  <li class="sidebar-nav-item">
+    <a href="{{link.rss}}" style="display: inline-block;" target="_blank">
+      <!-- Feed icon from http://www.feedicons.com, used as suggested
+           by Mozilla Feed Icon guidelines:
+           https://www.mozilla.org/en-US/foundation/feed-icon-guidelines/ -->
+      <!-- FIXME: margin-bottom: 0.2em is a bit of a hack. -->
+      <img src="/feed-icon-14x14.png" style="display: inline-block; margin-bottom: 0.2em; vertical-align: middle;"
+           alt="Atom/RSS Feed Icon- click to access Atom feed XML">
+      </img>
+    </a>
+    <a href="{{link.url}}">{{link.name}}</a></li>
+  {% else %}
+  <li class="sidebar-nav-item"><a href="{{link.url}}">{{link.name}}</a></li>
+  {% endif %}
+{% endfor %}
+{% endblock sidebar_nav %}
